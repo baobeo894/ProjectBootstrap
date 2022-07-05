@@ -198,23 +198,53 @@ img.img-curve:hover{
     transform: translateY(-10px);
 }
 
+#accordionExample .card-header button {
+    position: relative;
+}
 
-.w3l-faq-block .w3l-faq i{
+#accordionExample .card-header button::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f0d7';
     position: absolute;
-    transform: translate(-6px, 0);
+    top: 15%;
+    right: 10%;
+    transform: rotate(0deg);
+    transition: all 0.3s;
+}
+
+#accordionExample .card-header button:focus::before {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+ 
+/* #accordionExample .card .card-header {
+    position: relative;
+} */
+
+
+/* #accordionExample .card .card-header i{
+    position: absolute;
     margin-top: 16px;
     right: 25px;
     top: 10px;
-}
+    transform: rotate(0deg);
+} */
 
-.w3l-faq-block .w3l-faq i::before{
+/* #faq #accordionExample .card .card-header:focus i {
+    transform: rotate(-180deg);
+    color: red;
+} */
 
-    transform: translate(2px, 0) rotate(45deg);
-}
+/* .card:focus i{
+    transform: rotate(-180deg);
+} */
 
-.w3l-faq-block .w3l-faq i::after{
-    transform: translate(-2px, 0) rotate(-45deg);
-}
 
 .card .btn-link{
     text-decoration: none;
