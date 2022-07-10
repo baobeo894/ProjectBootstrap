@@ -110,7 +110,7 @@ RIGHT SIDEBAR SECTION
   width: 90px;
   position: fixed;
   height: 100%;
-  z-index: 1000;
+  z-index: 1;
   right: 0px;
   top: 0;
   margin-top: 60px;
@@ -181,6 +181,7 @@ header {
     height: 90px;
     display: grid;
     align-items: center;
+    z-index: 2;
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
 }
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -264,7 +265,7 @@ header {
 }
 .carousel .content {
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     overflow: hidden;
     background: #ffffff;
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../images/banner.jpg);
@@ -1660,7 +1661,7 @@ p {
         width: 100%;
     }
 
-    /* CAROUSEL */
+ 
 
 
 
