@@ -1332,7 +1332,7 @@ p {
 
 .dark .grids5-info {
     background: #181a1b;
-    border: 1px solid #dc4f72;
+    border: 1px solid #8a857e;
 }
 
 .dark .w3l-index5 .grid-view .grids5-info .blog-text {
@@ -1340,7 +1340,7 @@ p {
 }
 
 .dark .blog-text {
-    border-bottom: 1px solid #dc4f72;
+    border-bottom: 1px solid  #8a857e;
 }
 
 /* w3l-faq-block */
@@ -1371,13 +1371,13 @@ p {
 }
 
 .dark .accordion .card-header {
-    border: 1px solid #dc4f72;
+    border: 1px solid  #8a857e;
 
 }
 
 .dark .w3l-faq-block .w3l-faq #accordionExample .card {
-    border-bottom: 1px solid #dc4f72;
-    border: 1px solid #dc4f72;
+    border-bottom: 1px solid #8a857e;
+    border: 1px solid  #8a857e;
 }
 
 /* w3l-products */
