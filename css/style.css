@@ -13,6 +13,9 @@ html {
     line-height: 1.6;
     position: relative;
 }
+.clear{
+    clear: both;
+}
 .theme-button {
     transition: 0.3s ease-out;
     display: inline-block;
@@ -23,6 +26,143 @@ html {
     padding: 0px 30px;
     text-transform: uppercase;
 }
+/* bar */
+
+
+
+#w3lDemoBar.w3l-demo-bar {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 40px 5px;
+  padding-top:70px;
+  margin-bottom: 70px;
+  background: #0D1326;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+#w3lDemoBar.w3l-demo-bar a {
+  display: block;
+  color: #e6ebff;
+  text-decoration: none;
+  line-height: 24px;
+  opacity: .6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#w3lDemoBar.w3l-demo-bar span.w3l-icon {
+  display: block;
+}
+
+#w3lDemoBar.w3l-demo-bar a:hover {
+  opacity: 1;
+}
+
+#w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+  color: #e6ebff;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons {
+  margin-top: 30px;
+  border-top: 1px solid #41414d;
+  padding-top: 40px;
+}
+#w3lDemoBar.w3l-demo-bar .demo-btns {
+  border-top: 1px solid #41414d;
+  padding-top: 30px;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+  font-size: 26px;
+}
+#w3lDemoBar.w3l-demo-bar .no-margin-bottom{
+  margin-bottom:0;
+}
+.toggle-right-sidebar span {
+  background: #0D1326;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #e6ebff;
+  border-radius: 50px;
+  font-size: 26px;
+  cursor: pointer;
+  opacity: .5;
+}
+.pull-right {
+  float: right;
+  position: fixed;
+  right: 0px;
+  top: 70px;
+  width: 90px;
+  z-index: 1000;
+  text-align: center;
+}
+/* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+#right-sidebar {
+  width: 90px;
+  position: fixed;
+  height: 100%;
+  z-index: 1000;
+  right: 0px;
+  top: 0;
+  margin-top: 60px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  overflow-y: auto;
+}
+
+
+/* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+.hide-right-bar-notifications {
+  margin-right: -300px !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+
+
+@media (max-width: 992px) {
+  #w3lDemoBar.w3l-demo-bar a.desktop-mode{
+      display: none;
+
+  }
+}
+@media (max-width: 767px) {
+  #w3lDemoBar.w3l-demo-bar a.tablet-mode{
+      display: none;
+
+  }
+}
+@media (max-width: 568px) {
+  #w3lDemoBar.w3l-demo-bar a.mobile-mode{
+      display: none;
+  }
+  #w3lDemoBar.w3l-demo-bar .responsive-icons {
+      margin-top: 0px;
+      border-top: none;
+      padding-top: 0px;
+  }
+  #right-sidebar,.pull-right {
+      width: 90px;
+  }
+  #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile{
+      margin-bottom: 0;
+  }
+}
+
 /* header */
 .fixed-top {
     position: fixed;
@@ -40,6 +180,14 @@ header {
     display: grid;
     align-items: center;
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    
+    font-size: 16px;
+    font-weight: 400;
+    color: #2C3038;
 }
 .navbar-expand-lg .navbar-brand,
 .navbar-expand-lg .navbar-brand:hover {
@@ -110,7 +258,7 @@ header {
 }
 /* carousel */
 .carousel {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 .carousel .content {
     position: relative;
@@ -216,6 +364,14 @@ a:hover {
     line-height: 40px;
     color: #2C3038;
     font-weight: 700;
+}
+.aboutUs .book-info p {
+   
+    color: #2C3038;
+    
+}
+.aboutUs-content .stats_info p{
+    color: #2C3038 ;
 }
 /* GRIDS5-BLOCK */
 .header-section h6 {
@@ -656,7 +812,7 @@ img.img-curve:hover {
     margin: 0 20px;
 }
 
-/* .row .theme-button {
+ .theme-button {
     transition: 0.3s ease-out;
     display: inline-block;
     line-height: 52px;
@@ -669,10 +825,10 @@ img.img-curve:hover {
     border-color: #dc4f72;
 }
 
-.row .theme-button:hover {
+ .theme-button:hover {
     background-color: #dc4f72;
     color: white;
-} */
+}
 
 .slider-info {
     border-radius: 6px;
@@ -812,7 +968,7 @@ img.img-curve:hover {
 }
 
 /* trước hover */
-/* .theme-button {
+.theme-button {
     transition: 0.3s ease-out;
     display: inline-block;
     line-height: 52px;
@@ -823,27 +979,38 @@ img.img-curve:hover {
     text-transform: uppercase;
     color: #dc4f72;
     border-color: #dc4f72;
-} */
+}
 
 /* sau hover */
-/* .theme-button:hover {
+.theme-button:hover {
     background-color: #dc4f72;
     color: white;
     border-color: #dc4f72;
 }
 
-.btn-primary {
+.btn-danger {
     color: #fff;
     background-color: #dc4f72;
     border-color: #dc4f72;
     transition: all 0.3s;
 }
 
-.btn-primary:hover {
+.btn-danger:hover {
     color: #fff;
     background-color: #d62f58;
     border-color: #cf2952;
-} */
+}
+.btn-light {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    transition: all 0.3s;
+}
+.btn-light:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
 
 
 .contact h3 {
@@ -1088,7 +1255,60 @@ img.img-curve:hover {
 .dark #switchButton .fa-moon {
     display: none;
 }
+/* dark navbar */
+.dark #site-header{
+    background-color: #1b1d1f;
+    
+}
+.dark .nav-item .nav-link{
+    color: #dc4f72;
+}
 
+/* carousel */
+.dark .carousel {
+    background-color:  #181a1b;
+}
+.dark .carousel .content .row{
+    background-color: #181a1b;
+}
+.dark .carousel .content .row h3 {
+    background-color: #181a1b;
+    color:#dc4f72 ;
+}
+/* choose-us */
+.dark .choose-us{
+    background-color:  #1b1d1f;
+}
+.dark .choose-us .row .option{
+    background-color:#181a1b ;
+    border: 1px solid #dc4f72;
+}
+/* about us */
+.dark .aboutUs {
+    background-color: #1b1d1f;
+    
+}
+
+/* about us */
+.dark .aboutUs .row .book-info h3 {
+    color: #c9c4bc     
+}
+.dark .aboutUs .row .book-info p{
+    color: #c9c4bc    
+}
+.dark .aboutUs .stats_info {
+    background-color: rgb(24, 26, 27);
+    border: 1px solid #dc4f72;
+}
+.dark .aboutUs .stats_info h4{
+    color: #c9c4bc 
+}
+.dark .aboutUs-content .stats_info p {
+    color: #c9c4bc
+}
+.dark .aboutUs-content .stats_info .counter {
+    color: #dc4f72
+}
 /* w3l-index5 */
 .dark .w3l-index5 {
     background: #181a1b;
@@ -1110,7 +1330,7 @@ p {
 
 .dark .grids5-info {
     background: #181a1b;
-    border: 1px solid #8a857e;
+    border: 1px solid #dc4f72;
 }
 
 .dark .w3l-index5 .grid-view .grids5-info .blog-text {
@@ -1118,7 +1338,7 @@ p {
 }
 
 .dark .blog-text {
-    border-bottom: 1px solid #8a857e;
+    border-bottom: 1px solid #dc4f72;
 }
 
 /* w3l-faq-block */
@@ -1149,13 +1369,13 @@ p {
 }
 
 .dark .accordion .card-header {
-    border: 1px solid #8a857e;
+    border: 1px solid #dc4f72;
 
 }
 
 .dark .w3l-faq-block .w3l-faq #accordionExample .card {
-    border-bottom: 1px solid #8a857e;
-    border: 1px solid #8a857e;
+    border-bottom: 1px solid #dc4f72;
+    border: 1px solid #dc4f72;
 }
 
 /* w3l-products */
@@ -1391,7 +1611,71 @@ p {
 
 
 }
+@media only screen and (max-width:992px) {
 
+    /* HEADER */
+    header .navbar-toggler {
+        background-color: #dc4f72;
+    }
+
+    header .navbar-nav {
+        background-color: white;
+        text-align: center;
+
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center;
+
+    }
+
+    #portNavbar .nav-link:hover::after {
+        width: 15px;
+        text-align: center;
+        transform: translateX(-50%)
+    }
+
+    .navbar-nav .dropdown-menu {
+        text-align: center;
+
+    }
+    .dark header .navbar-nav{
+        background-color:#181a1b
+    }
+    /* aboutUs */
+    .aboutUs .aboutUs-content{
+        flex: 100%;
+        max-width:100%;
+        margin-top: 20px;
+    }
+    /* block */
+    .Readmore .middle-section h2 {
+        width: 100%;
+
+    }
+    
+    .Readmore .link-list-menu p {
+        width: 100%;
+    }
+
+    /* CAROUSEL */
+
+
+
+}
+
+
+@media (max-width: 568px){
+.carousel .content-left h3 {
+    font-size: 40px;
+    line-height: 45px;
+}
+.header-section h3 {
+    font-size: 32px;
+    line-height: 42px;
+    
+}
+} 
 
 @media screen and (max-width:992px) {
     .respons {
