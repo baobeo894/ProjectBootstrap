@@ -763,6 +763,7 @@ img.img-curve:hover {
     color: #5a5a5a;
 }
 
+
 #myCollapse .card-header .btn.collapsed::after {
     background-color: transparent;
     transition: all .5s;
@@ -1317,6 +1318,10 @@ img.img-curve:hover {
     background: #181a1b;
 }
 
+.dark .w3l-index5 .header-section .my-3{
+    color: #a09a91 !important;
+}
+
 .dark .w3l-index5 h3,
 p {
     color: #c9c4bc;
@@ -1327,7 +1332,7 @@ p {
 }
 
 .dark .w3l-index5 .blog-info a {
-    color: #c9c4bc;
+    color: #dc4f72;
 
 }
 
@@ -1337,7 +1342,7 @@ p {
 }
 
 .dark .w3l-index5 .grid-view .grids5-info .blog-text {
-    color: #5a5a5a;
+    color: #b0a99f;
 }
 
 .dark .blog-text {
@@ -1356,6 +1361,10 @@ p {
 }
 .dark .header-section h3 {
     color: #c9c4bc;
+}
+
+.dark .w3l-faq-block .header-section .my-3{
+    color: #aea79d !important;
 }
 
 .dark .accordion .card-header {
@@ -1385,6 +1394,9 @@ p {
 .dark .w3l-products {
     background: #181a1b;
 }
+.dark .w3l-products .header-section .my-3{
+    color: #afa89e !important;
+}
 
 .dark #nav-home-tab {
     background-color: #181a1b !important;
@@ -1406,9 +1418,25 @@ p {
     border-bottom: 3px solid #35393b;
 
 }
+.dark #nav-tabContent .tab-pane p{
+    color: #afa89e !important;
+}
+
+.dark #myCollapse .card-header .btn{
+    background: #1e2021;
+    color: #d0cdc6;
+}
 
 .dark .tab-pane h3 {
     color: #c9c4bc;
+}
+.dark .accordion1 .card-body h3{
+    color: #d0cdc6;
+
+}
+
+.dark .accordion1 .card{
+    background-color: #1e2021;
 }
 
 /* testimonials */
@@ -1483,7 +1511,7 @@ p {
 }
 
 .dark .w3l-footer .subscribe button {
-    background: #3b4042;
+    background: #941e3a;
 }
 
 .dark .w3l-footer .w3l-footer-16-main p a {
